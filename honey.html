@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="honey.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <div id ="container">
+        <h1>Todo List <span></span></h1>
+    
+        <div id="toggleAll">
+            <button onclick="handlers.toggleAll()">TOGGLE ALL</button>
+        </div>
+    
+        <div>
+            <button onclick="handlers.addTodos()">Add Todo</button>
+            <input type="text" name="#" id="addTodoTextInput">
+        </div>
+    
+        <div>
+            <button onclick="handlers.changeTodos()">Change Todo</button>
+            <input type="number" name="#" id="changeTodoPositionInput">
+            <input type="text" name="#" id="changeTodoTextInput">
+        </div>
+    
+        <div>
+            <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+            <input type="number" name="#" id="toggleCompletedPositionInput">
+        </div>
+
+        <ul>
+        </ul>
+    </div>
+
+    <script src="honey.js"></script>
+</body>
+</html>
