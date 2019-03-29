@@ -66,6 +66,7 @@ var handlers = {
     }
 };
 
+
 var view = {
     displayTodos: function () {
         var todosUl = document.querySelector('ul');
@@ -104,4 +105,31 @@ var view = {
     }
 };
 
+var input = document.getElementById('changeTodoTextInput');
+input.addEventListener('keyup', function (event){
+    if (event.keyCode === 13) {
+        handlers.changeTodos();
+    }
+});
+
+
+var input = document.getElementById ('addTodoTextInput');
+input.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+        handlers.addTodos();
+    }
+});
+
+var input = document.getElementById ('toggleCompletedPositionInput');
+input.addEventListener('keyup', function (event) {
+    if (event.keyCode === 13) {
+        handlers.toggleCompleted();
+    }
+});
+
 view.setUpEventListener();
+
+
+
+
+
