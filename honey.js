@@ -105,15 +105,3 @@ var view = {
 };
 
 view.setUpEventListener();
-
-var input = document.querySelector('addTodoTextInput');
-
-document.addEventListener('DOMContentLoaded', init);
-
-function init() {
-    var addTodoTextInput = document.getElementById('addTodoTextInput');
-
-    addTodoTextInput.addEventListener('input', event=> {
-        console.log(event.type, event.target, event.target.value);
-    });
-}

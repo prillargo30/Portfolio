@@ -13,14 +13,16 @@ body {
     background: rgba(29, 120, 206, 0.068);
     width: 700px;
     margin: 200px auto;
+    border-radius: 16px;
     border: 5px solid rgba(128, 128, 128, 0.24);
-    padding: 30px;
+    padding: 25px;
 }
 h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 380%;
     color: white;
     border: 3px solid gainsboro;
+    border-radius: 10px;
     background: none;
     text-align: center;
     margin: 24px auto;
@@ -38,6 +40,7 @@ button {
     font-family: 'Lobster', cursive;
     font-size: 18px;
     border: 1px solid rgb(102, 204, 255);
+    border-radius: 8px;
     width: 28%;
     padding: 7px;
 }
@@ -51,8 +54,10 @@ div {
 input{
     margin-left: 38px;
     padding: 7px;
-    color: black;
-    border: 2px solid black;
+    color: white;
+    background: rgba(255, 255, 255, 0.137);
+    border: 2px solid white;
+    border-radius: 8px;
     width: 26%;
     font-size: 16px;
     font-family: 'Indie Flower', cursive;
@@ -65,6 +70,13 @@ input{
 ul{
     color: whitesmoke;
     font-family: 'Indie Flower', cursive;
+}
+li{
+    background: rgba(255, 255, 255, 0.137);
+}
+li:nth-child(2n){
+    /* background: rgba(128, 128, 128, 0.089); */
+    background: none;
 }
 @media(max-width:768px) {
     h1 {
